@@ -73,44 +73,49 @@
             </p>
             <div>
                 <pre>
-                    .row {
-                        display: flex;
-                        flex-direction: row;
-                        flex-wrap: wrap;
+                    .linear-gradient-background {
+                        background-image: linear-gradient(
+                            rbga(232, 102, 236, 0.3) 0%
+                            rbga(232, 102, 236, 0.6) 100%
+                        ):
                     }
                 </pre>
             </div>
         </div>
         <div class="box5">
             <div class="title-box">
-                <h2>Flexbox Row</h2>
+                <h2>Box Transition Glow</h2>
             </div>
-            <p>Use these three properties to create a flexbox Row
-                layout
+            <p>Use transition and box shadows to glow on hover.
             </p>
             <div>
                 <pre>
-                    .row {
-                        display: flex;
-                        flex-direction: row;
-                        flex-wrap: wrap;
+                    .code-card .card-header {
+                        border-raduis: 8px;
+                        transition: all 0.5s ease-in-out:
+                    }
+
+                    .code-card: hover,
+                    .code-card: hover .card-header {
+                        box-shadow: inset 0px 0px 8px
+                    rbga(232, 102, 236, 1), 0 0 15px
+                    rbga(232, 102, 236, 1);
                     }
                 </pre>
             </div>
         </div>
         <div class="box6">
             <div class="title-box">
-                <h2>Flexbox Row</h2>
+                <h2>Overlay Card with Title</h2>
             </div>
-            <p>Use these three properties to create a flexbox Row
-                layout
+            <p>Use position properties and negative margins to raise
+                elements higher than their natural starting point.
             </p>
             <div>
                 <pre>
-                    .row {
-                        display: flex;
-                        flex-direction: row;
-                        flex-wrap: wrap;
+                    .card-header {
+                        position: relative;
+                        margin-top: -20px;
                     }
                 </pre>
             </div>
