@@ -17,10 +17,14 @@ header {
     flex-wrap: wrap;
 }
 
-.box1 {
-    background-color: purple;
+section {
+    border-style: dashed;
 }
 
 .title-box {
-    border-style: 
+    border-style: solid;
+}
+
+.pre-container {
+    background-color: purple;
 }
