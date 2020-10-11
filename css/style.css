@@ -39,9 +39,11 @@ section {
     border-width: 1px;
     margin: 10px;
     border-color: #ffffff;
+    /* position: absolute; */
 }
 
 .title-box {
+    /* position: relative; */
     border-style: solid;
     border-color: #ffffff;
     padding: 1%;
@@ -59,8 +61,24 @@ section p {
     font-size: 14px;
 }
 
-.pre-container {
+.code-container {
     background-color: var(--purple);
     color: #ffffff;
     font-family: 'Courier New', Courier, monospace;
+    margin: 2%;
+}
+
+.code-container pre {
+    text-align: left;
+}
+
+footer {
+    text-align: center;
+    color: var(--purple);
+    font-size: 26px;
+    font-weight: bold;
+}
+
+footer span {
+    color: red;
 }
