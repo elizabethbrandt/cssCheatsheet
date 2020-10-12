@@ -32,20 +32,24 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0 1% 1% 1%;
+    justify-content: space-evenly;
 }
 
 section {
     border-style: dashed;
     border-width: 1px;
     margin: 10px;
+    width:calc(33.33% - 20px);
     border-color: #ffffff;
-    /* position: absolute; */
+    position: relative;
 }
 
 .title-box {
-    /* position: relative; */
+    position: absolute;
+    top: -25px;
     border-style: solid;
     border-color: #ffffff;
+    width: 95%;
     padding: 1%;
     border-width: 1px;
     margin: 2%;
@@ -57,8 +61,11 @@ section {
 }
 
 section p {
+    clear: both;
+    padding-top: 40px;
     color: var(--purple);
     font-size: 14px;
+    margin-left: 2%;
 }
 
 .code-container {
@@ -66,10 +73,12 @@ section p {
     color: #ffffff;
     font-family: 'Courier New', Courier, monospace;
     margin: 2%;
+    /* background-image: linear-gradient(
+        rbga(232, 102, 236, 0.3) 0% 
+        rbga(232, 102, 236, 0.6) 100%); */
 }
 
 .code-container pre {
-    text-align: left;
 }
 
 footer {
@@ -82,3 +91,5 @@ footer {
 footer span {
     color: red;
 }
+
+/* @media screen and (max-width) */
