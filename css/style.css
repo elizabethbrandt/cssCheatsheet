@@ -35,7 +35,7 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 0 1% 1% 1%;
+    margin: 1% 1% 2% 1%;
     justify-content: space-evenly;
 }
 
@@ -81,12 +81,14 @@ section p {
     font-family: 'Courier New', Courier, monospace;
     margin: 2%;
     border-radius: 7px;
-    /* background-image: linear-gradient(
-        rbga(232, 102, 236, 0.3) 0% 
-        rbga(232, 102, 236, 0.6) 100%); */
 }
 
 .code-container pre {
+    line-height: 1.5;
+    /* background-image: linear-gradient(
+        rbga(232, 102, 236, 0.3) 0% 
+        rbga(232, 102, 236, 0.6) 100%
+    ); */
 }
 
 footer {
@@ -100,4 +102,14 @@ footer span {
     color: red;
 }
 
-/* @media screen and (max-width) */
+@media screen and (max-width: 992px){
+    section {
+        width:calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 768px){
+    section {
+        width:calc(100% - 20px);
+    }
+}
