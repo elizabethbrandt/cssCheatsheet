@@ -102,6 +102,18 @@ footer span {
     color: red;
 }
 
+/* section, .title-box {
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+section: hover,
+section: hover .title-box {
+    box-shadow: inset 0px 0px 8px
+    var(--purple),
+    0 0 15px var(--purple);
+} */
+
 @media screen and (max-width: 992px){
     section {
         width:calc(50% - 20px);
